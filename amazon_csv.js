@@ -14,7 +14,7 @@
 		var month = RegExp.$2; if (month.length <= 1) month = "0" + month;
 		var day = RegExp.$3; if (day.length <= 1) day = "0" + day;
 		var item = entry.item.split("\"").join("\"\"");
-		return year + month + day + ",,," + entry.price + ",\"Amazon: " + item + "\"\n";
+		return year+ "年" + month + day + ",,," + entry.price + ",\"Amazon: " + item + "\"\n";
 	}
 
 	// 一つの注文に含まれる複数の物品名をつなぐ文字列
